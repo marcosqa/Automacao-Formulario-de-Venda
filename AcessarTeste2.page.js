@@ -30,9 +30,9 @@ class AcessarTeste2Page {
 
     static validarDataPosterior() {
 
-        AcessarTeste1Elements.inputNomeDoProduto().type('Notebook Asus A200')
-        AcessarTeste1Elements.inputPrecoProduto().type('4,189')
-        AcessarTeste1Elements.inputValidade().select('02/08/2024')
+        AcessarTeste1Elements.inputNomeDoProduto().type('Celular Apple2')
+        AcessarTeste1Elements.inputPrecoProduto().type('4,850')
+        AcessarTeste1Elements.inputValidade().select('02/09/2024')
         AcessarTeste1Elements.btnAdicionarProduto().click()
         AcessarTeste1Elements.validarNomeFormulario()
             .should('contain', 'Validade')
@@ -46,7 +46,7 @@ class AcessarTeste2Page {
 
     static validarPrecoMenorQueZero() {
 
-        AcessarTeste1Elements.inputNomeDoProduto().type('Notebook Asus A200')
+        AcessarTeste1Elements.inputNomeDoProduto().type('Notebook Asus D5')
         AcessarTeste1Elements.inputPrecoProduto().type('-1')
         AcessarTeste1Elements.inputValidade().select('31/12/2021')
         AcessarTeste1Elements.btnAdicionarProduto().click()
@@ -63,8 +63,8 @@ class AcessarTeste2Page {
 
     static validarCampoPrecoComLetraCaracteres() {
 
-        AcessarTeste1Elements.inputNomeDoProduto().type('Notebook Asus A200')
-        AcessarTeste1Elements.inputPrecoProduto().type('teste@um$')
+        AcessarTeste1Elements.inputNomeDoProduto().type('Notebook Lenovo Ideapad')
+        AcessarTeste1Elements.inputPrecoProduto().type('teste@m*')
         AcessarTeste1Elements.inputValidade().select('31/12/2021')
         AcessarTeste1Elements.btnAdicionarProduto().click()
         AcessarTeste1Elements.validarNomeFormulario()
@@ -80,7 +80,7 @@ class AcessarTeste2Page {
 
     static validarCampoNomeDoProdutoComCaracteres() {
 
-        AcessarTeste1Elements.inputNomeDoProduto().type('Asus#$#%#%')
+        AcessarTeste1Elements.inputNomeDoProduto().type('Asus#$#%#teste')
         AcessarTeste1Elements.inputPrecoProduto().type('1,200')
         AcessarTeste1Elements.inputValidade().select('31/12/2021')
         AcessarTeste1Elements.btnAdicionarProduto().click()

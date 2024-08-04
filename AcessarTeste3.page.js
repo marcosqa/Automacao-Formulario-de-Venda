@@ -10,8 +10,8 @@ class AcessarTeste3Page {
 
     static preencherCamposDoFormulario() {
 
-        AcessarTeste1Elements.inputNomeDoProduto().type('Celular Samsumg')
-        AcessarTeste1Elements.inputPrecoProduto().type('1.800')
+        AcessarTeste1Elements.inputNomeDoProduto().type('Celular Samsumg A32')
+        AcessarTeste1Elements.inputPrecoProduto().type('1.899')
         AcessarTeste1Elements.inputValidade().select('31/12/2021')
         AcessarTeste1Elements.btnAdicionarProduto().click()
         cy.wait(5000)
@@ -30,8 +30,8 @@ class AcessarTeste3Page {
 
     static validarDataPosterior() {
 
-        AcessarTeste1Elements.inputNomeDoProduto().type('Notebook Asus A200')
-        AcessarTeste1Elements.inputPrecoProduto().type('4,189')
+        AcessarTeste1Elements.inputNomeDoProduto().type('Notebook Asus A32Y')
+        AcessarTeste1Elements.inputPrecoProduto().type('4,100')
         AcessarTeste1Elements.inputValidade().select('02/08/2024')
         AcessarTeste1Elements.btnAdicionarProduto().click()
         AcessarTeste1Elements.validarNomeFormulario()
@@ -46,7 +46,7 @@ class AcessarTeste3Page {
 
     static validarPrecoMenorQueZero() {
 
-        AcessarTeste1Elements.inputNomeDoProduto().type('Notebook Asus A200')
+        AcessarTeste1Elements.inputNomeDoProduto().type('Notebook Asus A200Ya')
         AcessarTeste1Elements.inputPrecoProduto().type('-1')
         AcessarTeste1Elements.inputValidade().select('31/12/2021')
         AcessarTeste1Elements.btnAdicionarProduto().click()
@@ -63,8 +63,8 @@ class AcessarTeste3Page {
 
     static validarCampoPrecoComLetraCaracteres() {
 
-        AcessarTeste1Elements.inputNomeDoProduto().type('Notebook Asus A200')
-        AcessarTeste1Elements.inputPrecoProduto().type('teste@um$')
+        AcessarTeste1Elements.inputNomeDoProduto().type('Notebook Asus A200RT')
+        AcessarTeste1Elements.inputPrecoProduto().type('teste@um$e6')
         AcessarTeste1Elements.inputValidade().select('31/12/2021')
         AcessarTeste1Elements.btnAdicionarProduto().click()
         AcessarTeste1Elements.validarNomeFormulario()
